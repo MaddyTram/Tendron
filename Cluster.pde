@@ -4,6 +4,10 @@ public class Cluster
 
     public Cluster(int len, int x, int y)
     {
-        // your code here
+      ArrayList <Tendril> a = new ArrayList <Tendril>();
+      for(int i = 0; i < 7; i++) {
+        a.add(new Tendril(len, i * (2*PI/7), x, y));
+        a.get(i).show();
+      }
     }
 }
